@@ -12,7 +12,9 @@
     <script>
         // 设置定时器和跳转的URL
             setTimeout(function () {
-                window.location.href = 'https:/blog.xueyao.me';
+                if (window.location.href !== 'https:/blog.xueyao.me') {
+                    window.location.href = 'https:/blog.xueyao.me';
+                }
             }, 1000); // 1秒后跳转
     </script>
 </body>
